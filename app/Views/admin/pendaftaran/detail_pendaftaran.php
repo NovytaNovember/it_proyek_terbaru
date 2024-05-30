@@ -13,6 +13,19 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="/template/AdminLTE-3.2.0/dist/css/adminlte.min.css">
     <style>
+        .paper {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
         .table-container {
             margin: 20px;
         }
@@ -139,7 +152,8 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index3.html" class="nav-link">
-                                        <p>Struktur Organisasi</p>
+                                        <p>Struktur
+                                        Organisasi</p>
                                     </a>
                                 </li>
                             </ul>
@@ -178,89 +192,78 @@
             <!-- Content Header (Page header) -->
             <div class="content-header">
                 <div class="container-fluid">
-                   
-<div class="row mb-2">
-    <div class="col-sm-6">
-        <h1 class="m-0">Formulir Tambah Pendaftaran</h1>
-    </div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container-fluid -->
-</div><!-- /.content-header -->     
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Detail Pendaftaran</h1>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div><!-- /.content-header -->
 
-<!-- Main content -->
-<div class="container mt-5" style="margin-top: 50px;"> <!-- Tambahkan margin-top di sini -->
-    <form>
-        <div class="form-group">
-            <label for="nama">Nama Calon Peserta Didik:</label>
-            <input type="text" class="form-control" id="nama" name="nama" value="(sesuaikan akta lahir)" required>
-        </div>
-        <div class="form-group">
-            <label for="tempat_lahir">Tempat Lahir:</label>
-            <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" value="(sesuaikan akta lahir)" required>
-        </div>
-        <div class="form-group">
-            <label for="tanggal_lahir">Tanggal Lahir:</label>
-            <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" value="2003-11-22" required>
-        </div>
-        <div class="form-group">
-            <label for="jenis_kelamin">Jenis Kelamin:</label>
-            <select class="form-control" id="jenis_kelamin" name="jenis_kelamin" required>
-                <option value="laki-laki">Laki-laki</option>
-                <option value="perempuan" selected>Perempuan</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="alamat">Alamat Calon Peserta Didik:</label>
-            <input type="text" class="form-control" id="alamat" name="alamat" value="(Alamat sesuai domisili tempat tinggal)" required>
-        </div>
-        <div class="form-group">
-            <label for="nama_ayah">Nama Ayah:</label>
-            <input type="text" class="form-control" id="nama_ayah" name="nama_ayah" value="[Nama Ayah]" required>
-        </div>
-        <div class="form-group">
-            <label for="nama_ibu">Nama Ibu:</label>
-            <input type="text" class="form-control" id="nama_ibu" name="nama_ibu" value="[Nama Ibu]" required>
-        </div>
-        <div class="form-group">
-            <label for="pekerjaan_ayah">Pekerjaan Ayah:</label>
-            <input type="text" class="form-control" id="pekerjaan_ayah" name="pekerjaan_ayah" value="[Pekerjaan Ayah]" required>
-        </div>
-        <div class="form-group">
-            <label for="pekerjaan_ibu">Pekerjaan Ibu:</label>
-            <input type="text" class="form-control" id="pekerjaan_ibu" name="pekerjaan_ibu" value="[Pekerjaan Ibu]" required>
-        </div>
-        <div class="form-group">
-            <label for="telepon_ayah">No Telepon Ayah:</label>
-            <input type="tel" class="form-control" id="telepon_ayah" name="telepon_ayah" value="[Nomor Telepon Ayah]" required>
-        </div>
-        <div class="form-group">
-            <label for="telepon_ibu">No Telepon Ibu:</label>
-            <input type="tel" class="form-control" id="telepon_ibu" name="telepon_ibu" value="[Nomor Telepon Ibu]" required>
-        </div>
-        <button type="submit" class="btn btn-primary float-right">Simpan</button>
-    </form>
-</div>
-</div><!-- /.content-wrapper -->
+            <!-- Main content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="paper">
+                        <div class="section">
+                            <span class="label">Nama Calon Peserta Didik:</span> Novyta Maharani
+                        </div>
+                        <div class="section">
+                            <span class="label">Tempat Lahir:</span> Tanah Laut
+                        </div>
+                        <div class="section">
+                            <span class="label">Tanggal Lahir:</span> 22-11-2003
+                        </div>
+                        <div class="section">
+                            <span class="label">Jenis Kelamin:</span> Perempuan
+                        </div>
+                        <div class="section">
+                            <span class="label">Alamat Calon Peserta Didik:</span> [Alamat sesuai domisili tempat tinggal]
+                        </div>
+                        <div class="section">
+                            <span class="label">Nama Ayah:</span> [Nama Ayah]
+                        </div>
+                        <div class="section">
+                            <span class="label">Nama Ibu:</span> [Nama Ibu]
+                        </div>
+                        <div class="section">
+                            <span class="label">Pekerjaan Ayah:</span> [Pekerjaan Ayah]
+                        </div>
+                        <div class="section">
+                            <span class="label">Pekerjaan Ibu:</span> [Pekerjaan Ibu]
+                        </div>
+                        <div class="section">
+                            <span class="label">No Telepon Ayah:</span> [Nomor Telepon Ayah]
+                        </div>
+                        <div class="section">
+                            <span class="label">No Telepon Ibu:</span> [Nomor Telepon Ibu]
+                        </div>
+                        <div class="section">
+                            <span class="label">Data Sesuai Akta Lahir:</span> [Data sesuai akta lahir]
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </div><!-- /.content -->
+        </div><!-- /.content-wrapper -->
 
-<footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-        <b>Version</b> 3.2.0
-    </div>
-    <strong>Contact</strong> 0822-5004-4551 | tk.kompi623@gmail.com
-</footer>
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.2.0
+            </div>
+            <strong>Contact</strong> 0822-5004-4551 | tk.kompi623@gmail.com
+        </footer>
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-</aside>
-</div><!-- ./wrapper -->
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+    </div><!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="/template/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="/template/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="/template/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
-
+    <!-- jQuery -->
+    <script src="/template/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/template/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/template/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
 </body>
+
 </html>

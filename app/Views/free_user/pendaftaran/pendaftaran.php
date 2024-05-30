@@ -79,6 +79,7 @@
             margin-right: auto;
             /* Memisahkan elemen di kiri dan kanan */
         }
+        
     </style>
 </head>
 
