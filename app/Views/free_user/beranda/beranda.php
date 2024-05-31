@@ -1,4 +1,3 @@
-
 <!-- DEBUG-VIEW START 1 APPPATH\Views\layout\header-user.php -->
 <!doctype html>
 <html lang="en">
@@ -29,7 +28,7 @@ void 0===window.kintMicrotimeInitialized&&(window.kintMicrotimeInitialized=1,win
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Hapus atau ganti favicon -->
-    <title>Portfolio</title>
+    <title>Beranda</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="template/satner-master/css/bootstrap.css">
     <link rel="stylesheet" href="template/satner-master/vendors/linericon/style.css">
@@ -156,8 +155,6 @@ void 0===window.kintMicrotimeInitialized&&(window.kintMicrotimeInitialized=1,win
     </header>
     <div style="width: 300px; height:100px"></div>
     <div class="container">
-
-
         </tbody>
     </table>
     </div>
