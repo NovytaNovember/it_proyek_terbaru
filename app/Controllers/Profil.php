@@ -6,6 +6,7 @@ class Profil extends BaseController
 {
     public function index()
     {
+        
         return view('free_user/profil/profil_sejarah');
     }
 
