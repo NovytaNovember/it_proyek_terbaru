@@ -1,3 +1,21 @@
+
+<!-- DEBUG-VIEW START 1 APPPATH\Views\layout\header-user.php -->
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengantar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/css-public.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/galeri.css">
+  <link rel="stylesheet" href="/css/profil.css">
+</head>
+
+<body>
 <!doctype html>
 <html lang="en">
 
@@ -109,21 +127,8 @@
                             <li class="nav-item"><a class="nav-link" href="portfolio.html">Kegiatan</a></li>
                             <li class="nav-item submenu dropdown ml-auto login">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-info-circle"></i> Info
+                                    <i class></i> Login
                                 </a>
-                                <!-- Dropdown menu -->
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <table class="table info-table">
-                                            <tr>
-                                                <td>Info Pengguna:</td>
-                                            </tr>
-                                        </table>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-key"></i> Level: Admin</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> Daftar Akun</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -142,3 +147,98 @@
 </body>
 
 </html>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\Views\layout\header-user.php -->
+<!-- DEBUG-VIEW START 2 APPPATH\Views\layout\banner.php -->
+
+<!-- DEBUG-VIEW ENDED 2 APPPATH\Views\layout\banner.php -->
+<!-- DEBUG-VIEW START 3 APPPATH\Views\pages\User\pengantar.php -->
+<!-- Link Css -->
+<link rel="stylesheet" href="/css/pengantarStyle.css">
+
+<div class="container-fluid">
+    <div class="card text-center">
+  <div class="card-body">
+  <div class="justify-content-center">
+        <img src="/img/background.jpg" class="img-fluid" alt="..." style="width: 60%">
+  </div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Cards</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu yang Rata Kiri</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-lg-6 mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Visi</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Subjudul Kartu</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card col-lg-6 mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Misi</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Subjudul Kartu</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- DEBUG-VIEW ENDED 3 APPPATH\Views\pages\User\pengantar.php -->
+<!-- DEBUG-VIEW START 4 APPPATH\Views\layout\footer.php -->
+<div class="container-xxl mt-5">
+  <div class="footer text-start bg-success text-light mt-4">
+    <div class="container text-start">
+      <div class="row">
+        <div class="col">
+          <p class="text-footer">Media Sosial</p>
+        </div>
+        <div class="col">
+          <p>Kontak</p>
+          <p class="text-footer">0822-5004-4551</p>
+          <p class="text-footer">tk.kompi623@gmail.com</p>
+        </div>
+        <div class="col">
+          <p class="text-footer">TK Kartika V-38</p> 
+          <p class="text-footer kuning" class="alamat">Kel. Angsau Kec. Pelaihari Kab. Tanah Laut, di Jl. A Yani Km 2 Kompi Senapan C 623</p>
+          <p class="text-footer"><p><br></p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="/script/script.js"></script>
+
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 4 APPPATH\Views\layout\footer.php -->

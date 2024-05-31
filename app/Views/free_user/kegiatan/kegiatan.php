@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Hapus atau ganti favicon -->
-    <title>Portfolio</title>
+    <title>Kegiatan</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="template/satner-master/css/bootstrap.css">
     <link rel="stylesheet" href="template/satner-master/vendors/linericon/style.css">
@@ -109,21 +109,8 @@
                             <li class="nav-item"><a class="nav-link" href="portfolio.html">Kegiatan</a></li>
                             <li class="nav-item submenu dropdown ml-auto login">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-info-circle"></i> Info
+                                    <i class=></i> Login
                                 </a>
-                                <!-- Dropdown menu -->
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <table class="table info-table">
-                                            <tr>
-                                                <td>Info Pengguna:</td>
-                                            </tr>
-                                        </table>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-key"></i> Level: Admin</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> Daftar Akun</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -133,12 +120,6 @@
     </header>
     <div style="width: 300px; height:100px"></div>
     <div class="container">
-
-
-        </tbody>
-    </table>
-    </div>
     
 </body>
-
 </html>
