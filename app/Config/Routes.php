@@ -16,7 +16,9 @@ $routes->get('detail_pendaftaran', 'Pendaftaran::detail');
 $routes->get('hapus_pendaftaran', 'Pendaftaran::hapus');
 
 
-$routes->get('pendaftaran_free_user', 'Pendaftaran_free_user::index');
+$routes->get('pendaftaran_freeuser', 'Pendaftaran_freeuser::index');
+$routes->get('form_pendaftaran_freeuser', 'Pendaftaran_freeuser::tambah');
+$routes->get('pengumuman_freeuser', 'Pengumuman_freeuser::index');
 
 $routes->get('pengumuman', 'Pengumuman::index');
 

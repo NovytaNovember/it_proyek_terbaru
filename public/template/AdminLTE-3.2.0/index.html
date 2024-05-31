@@ -42,54 +42,29 @@
         .btn-green:hover {
             background-color: #218838;
         }
-        .pagination-container {
+        .pagination {
+            margin-top: 20px;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            list-style-type: none;
         }
-        .form-table {
-            width: 100%;
+        .pagination li {
+            display: inline;
+            margin: 0 5px;
+        }
+        .pagination a {
+            text-decoration: none;
+            padding: 8px 16px;
+            color: #007bff;
             border: 1px solid #ddd;
-            border-collapse: collapse;
         }
-        .form-table th, .form-table td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            vertical-align: top;
-        }
-        .form-header {
+        .pagination a.active {
             background-color: #007bff;
             color: white;
-            padding: 10px;
-            font-size: 18px;
-            border-radius: 5px 5px 0 0;
+            border: 1px solid #007bff;
         }
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #dee2e6;
-            border-radius: 0 0 5px 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-        }
-        .form-container form {
-            flex: 1;
-        }
-        .form-container form .btn-primary {
-            align-self: flex-end;
-        }
-        .form-group label {
-            font-weight: bold;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            margin-right: 10px;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
         }
     </style>
 </head>
@@ -103,11 +78,10 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="index3.html" class="nav-link">
                         <i class="fas fa-list"></i>
-                        <span class="font-weight-bold" style="font-size: 1.2em;">Tambah Data Pendaftaran</span>
+                        <span class="font-weight-bold" style="font-size: 1.2em;">Data Pendaftaran</span>
                     </a>
                 </li>
             </ul>
-
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <!-- Info -->
@@ -132,6 +106,7 @@
                 </li>
             </ul>
         </nav>
+        <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -140,7 +115,6 @@
                 <img src="/template/AdminLTE-3.2.0/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">AdminLTE 3</span>
             </a>
-
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user (optional) -->
@@ -152,7 +126,6 @@
                         <a href="#" class="d-block">Alexander Pierce</a>
                     </div>
                 </div>
-
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -165,10 +138,7 @@
                         <li class="nav-item menu-open">
                             <a href="#" class="nav-link active">
                                 <i class="fas fa-user"></i>
-                                <p>
-                                    Profil
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
+                                <p>Profil<i class="right fas fa-angle-left"></i></p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
@@ -183,7 +153,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index3.html" class="nav-link">
-                                    <p>Struktur Organisasi</p>
+                                        <p>Struktur Organisasi</p>
                                     </a>
                                 </li>
                             </ul>
@@ -214,96 +184,61 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- /.sidebar-menu -->
             </div>
+            <!-- /.sidebar -->
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Tabel Data Pendaftaran</h1>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div><!-- /.content-header -->
+
             <!-- Main content -->
             <div class="content">
                 <div class="container-fluid">
                     <div class="table-container">
-                        <div class="form-header">
-                            Form Tambah Data Pendaftaran
+                        <button class="btn btn-green" onclick="addData()">Tambah</button>
+                        <div class="search-box">
+                            <label for="search">Search: </label>
+                            <input type="text" id="search" onkeyup="searchTable()">
                         </div>
-                        <div class="form-container">
-                            <form>
-                                <div class="form-group">
-                                    <label for="nama">Nama Calon Peserta Didik: (sesuaikan akta lahir)</label>
-                                    <input type="text" class="form-control" id="nama" name="nama" value="Masukkan Nama Calon Peserta Dididik" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tempat_lahir">Tempat Lahir: (sesuaikan akta lahir)</label>
-                                    <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" value="Masukkan Tempat Lahir" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tanggal_lahir">Tanggal Lahir: (sesuaikan akta lahir)</label>
-                                    <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" value="2003-11-22" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="jenis_kelamin">Jenis Kelamin:</label>
-                                    <select class="form-control" id="jenis_kelamin" name="jenis_kelamin" required>
-                                        <option value="laki-laki">Laki-laki</option>
-                                        <option value="perempuan" selected>Perempuan</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="alamat">Alamat Calon Peserta Didik: (Alamat lengkap sesuai domisili tempat tinggal)</label>
-                                    <input type="text" class="form-control" id="alamat" name="alamat" value="Masukkan Alamat Lengkap" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="nama_ayah">Nama Ayah:</label>
-                                    <input type="text" class="form-control" id="nama_ayah" name="nama_ayah" value="Masukkan Nama Ayah" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="nama_ibu">Nama Ibu:</label>
-                                    <input type="text" class="form-control" id="nama_ibu" name="nama_ibu" value="Masukkan Nama Ibu" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="pekerjaan_ayah">Pekerjaan Ayah:</label>
-                                    <input type="text" class="form-control" id="pekerjaan_ayah" name="pekerjaan_ayah" value="Masukkan Pekerjaan Ayah" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="pekerjaan_ibu">Pekerjaan Ibu:</label>
-                                    <input type="text" class="form-control" id="pekerjaan_ibu" name="pekerjaan_ibu" value="Masukkan Pekerjaan Ibu" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="telepon_ayah">No Telepon Ayah:</label>
-                                    <input type="tel" class="form-control" id="telepon_ayah" name="telepon_ayah" value="Masukkan Nomor Telepon Ayah" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="telepon_ibu">No Telepon Ibu:</label>
-                                    <input type="tel" class="form-control" id="telepon_ibu" name="telepon_ibu" value="Masukkan Nomor Telepon Ibu" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary" style="float: right;">Simpan</button>
-
-                            </form>
-                        </div>
+                        <table id="data-table">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Anak</th>
+                                    <th>Tempat Lahir</th>
+                                    <th>Tanggal Lahir</th>
+                                    <th>Jenis Kelamin</th>
+                                    <th>Agama</th>
+                                    <th>Detail</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <!-- Rows will be added dynamically -->
+                            </tbody>
+                        </table>
+                        <ul class="pagination" id="pagination">
+                            <!-- Pagination items will be added dynamically -->
+                        </ul>
                     </div>
-                </div>
-            </div><!-- /.content-wrapper -->
+                </div><!-- /.container-fluid -->
+            </div><!-- /.content -->
+        </div><!-- /.content-wrapper -->
 
-            <footer class="main-footer">
-                <div class="float-right d-none d-sm-block">
-                    <b>Version</b> 3.2.0
-                </div>
-                <strong>Contact</strong> 0822-5004-4551 | tk.kompi623@gmail.com
-            </footer>
-
-            <!-- Control Sidebar -->
-            <aside class="control-sidebar control-sidebar-dark">
-                <!-- Control sidebar content goes here -->
-            </aside>
-        </div><!-- ./wrapper -->
-
-        <!-- jQuery -->
-        <script src="/template/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
-        <!-- Bootstrap 4 -->
-        <script src="/template/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="/template/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
-        <!-- AdminLTE for demo purposes -->
-        <script src="/template/AdminLTE-3.2.0/dist/js/demo.js"></script>
-    </body>
-</html>
-
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.2.0
+            </div>
+            <strong>Contact</strong>
+            
