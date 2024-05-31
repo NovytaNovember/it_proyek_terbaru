@@ -9,7 +9,7 @@
                 <div class="container-fluid">
                     <div class="table-container">
                         <div class="form-header">
-                            Form Edit Data Pengumuman
+                            Form Tambah Data Pengumuman
                         </div>
                         <div class="form-container">
                         <form action="simpan_pendaftaran" method="post">
@@ -30,9 +30,10 @@
                                 <div class="form-group">
                                     <label for="deskripsi">Deskripsi:</label>
                                     <input type="text" class="form-control" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi" required>
+                                </div>
                                 
                                 <button type="submit" class="btn btn-primary" style="float: right;">Simpan</button>
-                                </div>
+
                             </form>
                         </div>
                     </div>

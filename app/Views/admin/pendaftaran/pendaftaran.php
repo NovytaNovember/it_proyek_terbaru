@@ -33,7 +33,7 @@
                           <td>22-11-2003</td>
                           <td>Perempuan</td>
                           <td>Islam</td>
-                          <td><a href="detail_pendaftarangit " class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a></td>
+                          <td><a href="detail_pendaftaran " class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a></td>
                           <td>
                               <a href="form_edit_pendaftaran" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</a>
                               <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Hapus</button>

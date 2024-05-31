@@ -23,7 +23,7 @@ $routes->get('form_pengumuman', 'Pengumuman::tambah');
 $routes->post('simpan_pengumuman', 'Pendaftaran::simpan');
 $routes->get('form_edit_pengumuman', 'Pengumuman::edit');
 $routes->post('update_pengumuman', 'Pengumuman::update');
-$routes->get('hasil_pengumuman', 'Pengumuman::detail');
+$routes->get('detail_hasil_pengumuman', 'Pengumuman::detail_hasil');
 $routes->get('hapus_pengumuman', 'Pengumuman::hapus');
 
 

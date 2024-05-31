@@ -32,7 +32,7 @@ class Pengumuman extends BaseController
     public function edit()
     {
 
-        return view('admin/pengumumann/form_edit_pengumuman.php');
+        return view('admin/pengumuman/form_edit_pengumuman.php');
 
     }
 
@@ -44,9 +44,9 @@ class Pengumuman extends BaseController
 
     }
 
-    public function hasil()
+    public function detail_hasil()
     {
-        return view('admin/pengumuman/hasil_pengumuman.php');
+        return view('admin/pengumuman/detail_hasil_pengumuman.php');
 
     }
 
