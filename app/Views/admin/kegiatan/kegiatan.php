@@ -1,144 +1,309 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Hapus atau ganti favicon -->
-    <title>Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="template/satner-master/css/bootstrap.css">
-    <link rel="stylesheet" href="template/satner-master/vendors/linericon/style.css">
-    <link rel="stylesheet" href="template/satner-master/css/font-awesome.min.css">
-    <link rel="stylesheet" href="template/satner-master/vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="template/satner-master/css/magnific-popup.css">
-    <link rel="stylesheet" href="template/satner-master/vendors/nice-select/css/nice-select.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="template/satner-master/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kegiatan Admin</title>
 
-    <!-- Custom CSS untuk warna tombol dan dropdown -->
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="<?= base_url()?>/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="<?= base_url()?>/template/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="<?= base_url()?>/template/AdminLTE-3.2.0/docs/assets/css/adminlte.min.css">
     <style>
-        .nav-link {
-            transition: color 0.3s;
-            /* Efek transisi */
-            color: black !important;
-            /* Warna awal */
+        .table-container {
+            margin: 20px;
         }
-
-        .nav-link:hover,
-        .nav-link:focus,
-        .nav-link:active {
-            color: green !important;
-            /* Warna saat cursor mengarah padanya dan saat diklik */
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
         }
-
-        .dropdown-menu.show {
-            background-color: green !important;
-            /* Mengubah latar belakang dropdown menjadi hijau */
+        .table-container th, .table-container td {
+            border: 1px solid #ddd;
+            padding: 8px;
         }
-
-        .dropdown-menu.show .nav-item {
-            color: white !important;
-            /* Mengubah warna tulisan menjadi putih */
+        .table-container th {
+            background-color: #f2f2f2;
+            text-align: left;
         }
-
-        .navbar-nav .ml-auto {
-            margin-left: auto;
+        .table-container td .btn {
+            margin-right: 5px;
         }
-
-        /* Custom CSS untuk menggeser TK Kartika V-38 ke kiri */
-        .tk-kartika {
-            margin-right: 900px;
-            /* menggeser ke kiri */
-            margin-left: 20px;
-            /* Menghapus margin kiri */
-            margin-top: -17px;
-            /* menggeser ke atas */
+        .table-container .search-box {
+            float: right;
+            margin-bottom: 10px;
         }
-
-        /* Custom CSS untuk merata-tengah teks dalam tabel */
-        .info-table {
-            text-align: center;
+        .btn-green {
+            background-color: #28a745;
+            color: white;
         }
-
-        /* CSS untuk mengatur ulang margin pada menu dan ikon login */
-        .menu_nav .nav-item {
-            margin-right: 15px;
-            /* Menambahkan jarak antar item menu */
+        .btn-green:hover {
+            background-color: #218838;
         }
-
-        .login {
-            margin-left: auto;
-            /* Mengatur margin kiri untuk ikon login */
-            margin-right: -20px;
-        }
-
-        /* Custom CSS untuk memisahkan TK Kartika V-38 dan Info */
-        .separator {
-            margin-right: auto;
-            /* Memisahkan elemen di kiri dan kanan */
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 
-<body>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index3.html" class="nav-link">
+                        <i class="fas fa-list"></i> 
+                        <span class="font-weight-bold" style="font-size: 1.2em;">Data Kegiatan</span>
+                    </a>
+                </li>
+            </ul>
 
-    <!--================ Start Header Area =================-->
-    <header class="header_area">
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav">
-                            <li class="nav-item tk-kartika"><a class="nav-link" href="portfolio.html">TK Kartika V-38</a></li>
-                            <li class="separator"></li> <!-- Separator to create space -->
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Sejarah Sekolah</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Visi Misi & Tujuan</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Struktur Organisasi</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Tenaga Pendidik</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Pendaftaran</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Pengumuman</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Kegiatan</a></li>
-                            <li class="nav-item submenu dropdown ml-auto login">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-info-circle"></i> Info
-                                </a>
-                                <!-- Dropdown menu -->
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <table class="table info-table">
-                                            <tr>
-                                                <td>Info Pengguna:</td>
-                                            </tr>
-                                        </table>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-key"></i> Level: Admin</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> Daftar Akun</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Info -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="ml-1">Info</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">Info Pengguna</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-key mr-2"></i> Level: Admin
+                        </a>
+                        <a href="./index2.html" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> Daftar Akun
+                        </a>
+                        <a href="./index3.html" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+                <img src="/template/AdminLTE-3.2.0/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">AdminLTE 3</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="/template/AdminLTE-3.2.0/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Alexander Pierce</a>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <div style="width: 300px; height:100px"></div>
-    <div class="container">
 
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="fas fa-home"></i>
+                                <p>Beranda</p>
+                            </a>
+                        </li>
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active">
+                                <i class="fas fa-user"></i>
+                                <p>
+                                    Profil
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link active">
+                                        <p>Sejarah Sekolah</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index2.html" class="nav-link">
+                                        <p>Visi Misi & Tujuan</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index3.html" class="nav-link">
+                                        <p>Struktur Organisasi</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <p>Tenaga Pendidik</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="fas fa-calendar"></i>
+                                <p>Kegiatan</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="form_pendaftaran" class="nav-link">
+                                <i class="fas fa-clipboard-list"></i>
+                                <p>Pendaftaran</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="fas fa-bullhorn"></i>
+                                <p>Pengumuman</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
 
-        </tbody>
-    </table>
-    </div>
-    
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Tabel Data Kegiatan</h1>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div><!-- /.content-header -->     
+
+            <!-- Main content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="table-container">
+                        <button class="btn btn-green" onclick="addData()">Tambah</button>
+                        <div class="search-box">
+                            <label for="search">Search: </label>
+                            <input type="text" id="search">
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Judul</th>
+                                    <th>Status</th>
+                                    <th>Tanggal Dibuat</th>
+                                    <th>Tanggal Diubah</th>
+                                    <th>Gambar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Pembuatan Jus</td>
+                                    <td>Diterima</td>
+                                    <td>11-04-2023</td>
+                                    <td>12-04-2023</td>
+                                    <td><div class="card" style="width: 8rem;">
+                                        <img src="<?= base_url()?>/img/pembuatan jus.jpg" class="card-img-top" alt="..." div></td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</button>
+                                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Hapus</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>2</td>
+                                    <td>Pembuatan Jasuke</td>
+                                    <td>Diterima</td>
+                                    <td>15-04-2023</td>
+                                    <td>17-04-2023</td>
+                                    <td><div class="card" style="width: 8rem;">
+                                        <img src="<?= base_url()?>/img/pembuatan jasuke.jpg" class="card-img-top" alt="..." div></td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</button>
+                                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Hapus</button>
+                                    </td>
+                                </tr>
+                                <!-- Additional minimal example rows -->
+                                <tr>
+                                <td>3</td>
+                                    <td>Pembagian Hadiah</td>
+                                    <td>Ditolak</td>
+                                    <td>19-04-2023</td>
+                                    <td>23-04-2023</td>
+                                    <td><div class="card" style="width: 8rem;">
+                                        <img src="<?= base_url()?>/img/pembagian hadiah.jpg" class="card-img-top" alt="..." div></td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</button>
+                                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Hapus</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>4</td>
+                                    <td>Persiapan Pulang</td>
+                                    <td>Diterima</td>
+                                    <td>30-04-2023</td>
+                                    <td>31-04-2023</td>
+                                    <td><div class="card" style="width: 8rem;">
+                                        <img src="<?= base_url()?>/img/persiapan pulang.jpg" class="card-img-top" alt="..." div></td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</button>
+                                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Hapus</button>
+                                    </td>
+                                </tr>
+                                <!-- End of additional minimal example rows -->
+                            </tbody>
+                        </table>
+
+                        <!-- Pagination -->
+                        <div class="pagination-container">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </div><!-- /.content -->
+        </div><!-- /.content-wrapper -->
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.2.0
+            </div>
+            <strong>Contact</strong> 0822-5004-4551 | tk.kompi623@gmail.com
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="/template/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/template/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/template/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
 </body>
 
 </html>

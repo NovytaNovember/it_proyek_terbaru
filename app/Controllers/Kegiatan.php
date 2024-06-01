@@ -11,17 +11,17 @@ class Kegiatan extends BaseController
     
     public function tambah()
     {
-        return view('admin/kegiatan/form_tambah_kegiatan.php');
+        return view('admin/kegiatan/form_tambah_kegiatan');
     }
 
     public function edit()
     {
-        return view('admin/kegiatan/form_edit_kegiatan.php');
+        return view('admin/kegiatan/form_edit_kegiatan');
     }
 
     public function hapus()
     {
-        return view('admin/kegiatan/form_hapus_kegiatan.php');
+        return view('admin/kegiatan/form_hapus_kegiatan');
     }
 
 }

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=devpice-width, initial-scale=1">
-    <title>Kegiatan Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visi Misi Admin</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="<?= base_url()?>/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -59,7 +59,7 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="index3.html" class="nav-link">
                         <i class="fas fa-list"></i> 
-                        <span class="font-weight-bold" style="font-size: 1.2em;">Data Kegiatan</span>
+                        <span class="font-weight-bold" style="font-size: 1.2em;">Profil Admin</span>
                     </a>
                 </li>
             </ul>
@@ -76,7 +76,7 @@
                         <span class="dropdown-item dropdown-header">Info Pengguna</span>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-key mr-2"></i> Level: Kepala Sekolah
+                            <i class="fas fa-key mr-2"></i> Level: Admin
                         </a>
                         <a href="./index2.html" class="dropdown-item">
                             <i class="fas fa-users mr-2"></i> Daftar Akun

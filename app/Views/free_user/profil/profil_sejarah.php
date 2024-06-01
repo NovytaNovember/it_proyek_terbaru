@@ -112,19 +112,19 @@
                         <ul class="nav navbar-nav menu_nav">
                             <li class="nav-item tk-kartika"><a class="nav-link" href="portfolio.html">TK Kartika V-38</a></li>
                             <li class="separator"></li> <!-- Separator to create space -->
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="/beranda">Beranda</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Sejarah Sekolah</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Visi Misi & Tujuan</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Struktur Organisasi</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/sejarah">Sejarah Sekolah</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/visi_misi">Visi Misi & Tujuan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/struktur">Struktur Organisasi</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Tenaga Pendidik</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Pendaftaran</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Pengumuman</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Kegiatan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/tendik">Tenaga Pendidik</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pendaftaran">Pendaftaran</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pengumuman">Pengumuman</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/kegiatan">Kegiatan</a></li>
                             <li class="nav-item submenu dropdown ml-auto login">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class></i> Login
@@ -202,11 +202,11 @@
 <div class="card-body">
     <h5 class="card-title">Selamat Datang di TK Kartika V-38</h5>
     <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-    <p class="card-text">Taman Kanak-Kanak Kartika V-38 terletak di Kelurahan Angsau Kecamatan Pelaihari Kabupaten Tanah Laut, tepatnya di Jl. A Yani Km 2 Kompi Senapan C 623 sejak tahun 1993. Latar belakang lembaga ini didirikan adalah untuk menampung anak-anak prajurit TNI yang akan sekolah Taman Kanak-Kanak agar tidak jauh-jauh keluar dari asrama.</p>
-    <p class="card-text">Gedung atau ruangan yang digunakan untuk ruangan kelas pertama adalah gudang yang ada dibelakang Aula Kompi. Tapi setelah satu tahun berlangsung yaitu pada tahun 1994 akhirnya diberi 3 lokal untuk dijadikan ruangan kelas yang sebelumnya merupakan bangunan milik Kompi Senapan C 623 dan sampai sekarang masih digunakan.</p>
-    <p class="card-text">Pada awal berdiri TK Kartika V-38 bernama TK Kartika VI-38. Seiring perkembangan jaman pada tahun 2007 ada perubahan nama dari TK Kartika VI-38 menjadi Kartika V-38.</p>
-    <p class="card-text">Pada tahun 1993 awal berdiri Taman Kanak-Kanak Kartika V-38 mempunyai 2 orang guru dan 1 Kepala Sekolah. Dalam perkembangannya TK Kartika V-38 sudah mengalami pergantian Kepala Sekolah sebanyak empat kali. Mulai yang pertama Ibu Siti Rukayah, kedua Ibu Aina, ketiga Ibu Tutik Wirahayu dan yang keempat Ibu Suwarni.</p>
-    <p class="card-text"> Taman Kanak-Kanak Kartika V-38 berada dibawah naungan yayasan Kartika Jaya Cabang V Daerah Mulawarman. Yayasan ini bergerak dibidang pendidikan mulai dari PAUD sampai dengan Perguruan Tinggi.</p>
+    <p class="card-text" style="text-align: justify">Taman Kanak-Kanak Kartika V-38 terletak di Kelurahan Angsau Kecamatan Pelaihari Kabupaten Tanah Laut, tepatnya di Jl. A Yani Km 2 Kompi Senapan C 623 sejak tahun 1993. Latar belakang lembaga ini didirikan adalah untuk menampung anak-anak prajurit TNI yang akan sekolah Taman Kanak-Kanak agar tidak jauh-jauh keluar dari asrama.
+    Gedung atau ruangan yang digunakan untuk ruangan kelas pertama adalah gudang yang ada dibelakang Aula Kompi. Tapi setelah satu tahun berlangsung yaitu pada tahun 1994 akhirnya diberi 3 lokal untuk dijadikan ruangan kelas yang sebelumnya merupakan bangunan milik Kompi Senapan C 623 dan sampai sekarang masih digunakan.
+    Pada awal berdiri TK Kartika V-38 bernama TK Kartika VI-38. Seiring perkembangan jaman pada tahun 2007 ada perubahan nama dari TK Kartika VI-38 menjadi Kartika V-38.
+    Pada tahun 1993 awal berdiri Taman Kanak-Kanak Kartika V-38 mempunyai 2 orang guru dan 1 Kepala Sekolah. Dalam perkembangannya TK Kartika V-38 sudah mengalami pergantian Kepala Sekolah sebanyak empat kali. Mulai yang pertama Ibu Siti Rukayah, kedua Ibu Aina, ketiga Ibu Tutik Wirahayu dan yang keempat Ibu Suwarni.
+     Taman Kanak-Kanak Kartika V-38 berada dibawah naungan yayasan Kartika Jaya Cabang V Daerah Mulawarman. Yayasan ini bergerak dibidang pendidikan mulai dari PAUD sampai dengan Perguruan Tinggi.</p>
 </div>
 <!-- DEBUG-VIEW ENDED 3 APPPATH\Views\pages\User\pengantar.php -->
 <!-- DEBUG-VIEW START 4 APPPATH\Views\layout\footer.php -->

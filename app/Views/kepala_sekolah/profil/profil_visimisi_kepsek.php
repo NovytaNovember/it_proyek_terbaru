@@ -1,4 +1,3 @@
-
 <!-- DEBUG-VIEW START 1 APPPATH\Views\layout\header-user.php -->
 <!doctype html>
 <html lang="en">
@@ -112,22 +111,36 @@
                         <ul class="nav navbar-nav menu_nav">
                             <li class="nav-item tk-kartika"><a class="nav-link" href="portfolio.html">TK Kartika V-38</a></li>
                             <li class="separator"></li> <!-- Separator to create space -->
-                            <li class="nav-item active"><a class="nav-link" href="/beranda">Beranda</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="/sejarah">Sejarah Sekolah</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/visi_misi">Visi Misi & Tujuan</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/struktur">Struktur Organisasi</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Sejarah Sekolah</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Visi Misi & Tujuan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Struktur Organisasi</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="/tendik">Tenaga Pendidik</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/pendaftaran">Pendaftaran</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/pengumuman">Pengumuman</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/kegiatan">Kegiatan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Tenaga Pendidik</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Pendaftaran</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Pengumuman</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Kegiatan</a></li>
                             <li class="nav-item submenu dropdown ml-auto login">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class></i> Login
+                                <i class="fa fa-info-circle"></i> Info
+                                </a>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <table class="table info-table">
+                                            <tr>
+                                                <td>Info Pengguna:</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-key"></i> Level: Kepala Sekolah</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> Daftar Akun</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+
                                 </a>
                             </li>
                         </ul>
@@ -168,13 +181,60 @@
         <img src="/img/background.jpg" class="img-fluid" alt="..." style="width: 60%">
   </div>
 </div>
-<div class="card-body">
-    <h5 class="card-title">Struktur Organisasi</h5>
-    <img src="/img/pembuatan jus.jpg" class="img-fluid" alt="..." style="width: 40%">
-  </div>
-  <div class="container-fluid">
-    <div class="card text-center">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Cards</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu yang Rata Kiri</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-lg-6 mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Tujuan</h5>
+                    <p class="card-text">1. Terwujudnya lingkungan belajar yang menumbuhkan keimanan dan ketakwaan pada Tuhan yang Maha Esa.
+                                        2. Terwujudnya lingkungan belajar yang menumbuhkan sikap gotong royong.
+                                        3. Terwujudnya lingkungan belajar yang menumbuhkan sikap saling menghargai dalam perbedaan.
+                                        4. terwujudnya pribadi anak yang disiplin, tanggung jawab, jujur, kreatif, dan mandiri</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card col-lg-6 mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Misi</h5>
+                    <p class="card-text">1. Menanamkan lingkungan belajar yang menumbuhkan keimanan dan ketakwaan pada Tuhan yang Maha Esa.
+                                        2. Menanamkan lingkungan belajar yang menumbuhkan sikap gotong royong.
+                                        3. Menanamkan lingkungan belajar yang menumbuhkan sikap saling menghargai dalam perbedaan.
+                                        4. menanamkan lingkungan belajar yang menumbuhkan sikap disiplin, tanggung jawab, jujur, kreatif, dan mandiri.</p>
+                </div>
+            </div>
+            <div class="card col-lg-6 mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Visi</h5>
+                    <p class="card-text">Mewujudkan generasi yang Beriman dan Bertaqwa, Gotong Royong, Toleransi, dan Berkarakter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
 <!-- DEBUG-VIEW ENDED 3 APPPATH\Views\pages\User\pengantar.php -->
 <!-- DEBUG-VIEW START 4 APPPATH\Views\layout\footer.php -->
 <div class="container-xxl mt-5">
@@ -198,7 +258,6 @@
     </div>
   </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="/script/script.js"></script>
 

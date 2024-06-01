@@ -116,36 +116,23 @@ void 0===window.kintMicrotimeInitialized&&(window.kintMicrotimeInitialized=1,win
                         <ul class="nav navbar-nav menu_nav">
                             <li class="nav-item tk-kartika"><a class="nav-link" href="portfolio.html">TK Kartika V-38</a></li>
                             <li class="separator"></li> <!-- Separator to create space -->
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="/beranda">Beranda</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="<?= base_url('/profil')?>">Sejarah Sekolah</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Visi Misi & Tujuan</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Struktur Organisasi</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?= base_url('/sejarah')?>">Sejarah Sekolah</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/visi_misi">Visi Misi & Tujuan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/struktur">Struktur Organisasi</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Tenaga Pendidik</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Pendaftaran</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Pengumuman</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Kegiatan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/tendik">Tenaga Pendidik</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pendaftaran">Pendaftaran</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pengumuman">Pengumuman</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/kegiatan">Kegiatan</a></li>
                             <li class="nav-item submenu dropdown ml-auto login">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-info-circle"></i> Info
+                                    <i class=></i> Login
                                 </a>
-                                <!-- Dropdown menu -->
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <table class="table info-table">
-                                            <tr>
-                                                <td>Info Pengguna:</td>
-                                            </tr>
-                                        </table>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-key"></i> Level: Admin</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> Daftar Akun</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -211,13 +198,12 @@ void 0===window.kintMicrotimeInitialized&&(window.kintMicrotimeInitialized=1,win
         <div class="row ">
         <div class="card" style="width: 18rem;">
             <img src="<?= base_url()?>/img/pembuatan jasuke.jpg" class="card-img-top" alt="...">
-</div>
+        </div>
         <div class="card" style="width: 18rem;">
             <img src="<?= base_url()?>/img/pembuatan jus.jpg" class="card-img-top" alt="...">
-</div>
+        </div>
         <div class="card" style="width: 18rem;">
             <img src="<?= base_url()?>/img/persiapan pulang.jpg" class="card-img-top" alt="...">
-</div>
         </div>
     </div>
 </div>

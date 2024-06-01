@@ -2,34 +2,23 @@
 
 namespace App\Controllers;
 
-class Profil extends BaseController
+class Profil_admin extends BaseController
 {
-    public function index()
+    public function lihat_sejarah()
     {
-        return view('free_user/profil/profil_sejarah');
+        return view('admin/profil/profil_sejarah_admin');
     }
 
     public function lihat_visi()
     {
-        return view('free_user/profil/profil_visimisi');
+        return view('admin/profil/profil_visimisi_admin');
     }
-    
+
     public function lihat_struktur()
     {
-        return view('free_user/profil/profil_struktur');
+        return view('admin/profil/profil_struktur_admin');
     }
-
-    public function tambah()
-    {
-        return view('admin/profil/form_tambah_profil');
-        
-    }
-
-    public function edit()
-    {
-        return view('admin/profil/form_edit_profil');
-        
-    }
+    
 }
 
 ?>

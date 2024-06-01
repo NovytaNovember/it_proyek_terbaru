@@ -7,11 +7,11 @@
     <title>AdminLTE 3 | dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="<?= base_url()?>/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/template/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?= base_url()?>/template/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="/template/AdminLTE-3.2.0/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="<?= base_url()?>/template/AdminLTE-3.2.0/docs/assets/css/adminlte.min.css">
     <style>
         .paper {
             background-color: white;
