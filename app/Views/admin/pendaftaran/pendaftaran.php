@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this->extend('template/template_admin'); ?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | dashboard</title>
+<?= $this->section('konten'); ?>
 
+<<<<<<< HEAD
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="<?= base_url()?>/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -49,46 +46,59 @@
         }
     </style>
 </head>
+=======
+  <!-- Main content -->
+  <div class="content-wrapper">
+  <div class="content">
+      <div class="container-fluid">
+          <div class="table-container">
+              <a href="form_pendaftaran" class="btn btn-green" onclick="addData()">Tambah</a>
+              <div class="search-box">
+                  <label for="search">Search: </label>
+                  <input type="text" id="search">
+              </div>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>No</th>
+                          <th>Nama Calon Peserta Didik</th>
+                          <th>Tempat Lahir</th>
+                          <th>Tanggal Lahir</th>
+                          <th>Jenis Kelamin</th>
+                          <th>Agama</th>
+                          <th>Detail</th>
+                          <th>Aksi</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Novyta Maharani</td>
+                          <td>Tanah Laut</td>
+                          <td>22-11-2003</td>
+                          <td>Perempuan</td>
+                          <td>Islam</td>
+                          <td><a href="detail_pendaftaran " class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a></td>
+                          <td>
+                              <a href="form_edit_pendaftaran" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</a>
+                              <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Hapus</button>
+                          </td>
+                      </tr>
+                    
+                     
+                      <!-- End of additional minimal example rows -->
+                  </tbody>
+              </table>
+>>>>>>> ca236054bdec86d143c9e5492679ac01e360d851
 
-<body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
-        <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-light">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">
-                        <i class="fas fa-list"></i> 
-                        <span class="font-weight-bold" style="font-size: 1.2em;">Data Pendaftaran</span>
-                    </a>
-                </li>
-            </ul>
+          </div>
+      </div><!-- /.container-fluid -->
+  </div><!-- /.content -->
+  </div><!-- /.content-wrapper -->
 
-            <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
-                <!-- Info -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="fas fa-info-circle"></i>
-                        <span class="ml-1">Info</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header">Info Pengguna</span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-key mr-2"></i> Level: Admin
-                        </a>
-                        <a href="./index2.html" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> Daftar Akun
-                        </a>
-                        <a href="./index3.html" class="dropdown-item">
-                            <i class="fas fa-sign-out-alt mr-2"></i> Logout
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+  <!-- Content End -->
 
+<<<<<<< HEAD
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -309,3 +319,6 @@
 </body>
 
 </html>
+=======
+  <?= $this->endSection(); ?>
+>>>>>>> ca236054bdec86d143c9e5492679ac01e360d851

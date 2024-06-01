@@ -6,7 +6,8 @@ class Profil_admin extends BaseController
 {
     public function lihat_sejarah()
     {
-        return view('admin/profil/profil_sejarah_admin');
+        
+        return view('free_user/profil/profil_sejarah');
     }
 
     public function lihat_visi()

@@ -60,21 +60,129 @@
             justify-content: center;
             margin-top: 20px;
         }
-        .sidebar {
+        .btn-blue {
             background-color: #007bff;
+            color: white;
         }
-        .nav-sidebar .nav-link {
-            color: #fff;
-        }
-        .nav-sidebar .nav-link.active {
+        .btn-blue:hover {
             background-color: #0056b3;
         }
-        .brand-link {
-            background-color: #007bff;
-            border-bottom: 1px solid #0056b3;
+        .btn-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
         }
-        .brand-text {
-            color: #fff !important;
+        .table-container {
+            margin: 20px;
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-container th, .table-container td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .table-container th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        .table-container td .btn {
+            margin-right: 5px;
+        }
+        .table-container .search-box {
+            float: right;
+            margin-bottom: 10px;
+        }
+        .btn-green {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-green:hover {
+            background-color: #218838;
+        }
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .form-table {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+        }
+        .form-table th, .form-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            vertical-align: top;
+        }
+        .form-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px 5px 0 0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container form {
+            flex: 1;
+        }
+        .form-container form .btn-primary {
+            align-self: flex-end;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            margin-right: 10px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .table-container {
+            margin: 20px;
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-container th, .table-container td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .table-container th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        .table-container td .btn {
+            margin-right: 5px;
+        }
+        .table-container .search-box {
+            float: right;
+            margin-bottom: 10px;
+        }
+        .btn-green {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-green:hover {
+            background-color: #218838;
+        }
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -92,6 +200,7 @@
                     </a>
                 </li>
             </ul>
+            
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
@@ -148,7 +257,7 @@
                             </a>
                         </li>
                         <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link ">
                                 <i class="fas fa-user"></i>
                                 <p>
                                     Profil
@@ -168,14 +277,13 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index3.html" class="nav-link">
-                                        <p>Struktur
-                                        Organisasi</p>
+                                        <p>Struktur Organisasi</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="tenaga_pendidik" class="nav-link">
                                 <i class="fas fa-chalkboard-teacher"></i>
                                 <p>Tenaga Pendidik</p>
                             </a>
@@ -187,13 +295,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="form_pendaftaran" class="nav-link">
+                            <a href="pendaftaran" class="nav-link">
                                 <i class="fas fa-clipboard-list"></i>
                                 <p>Pendaftaran</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="pengumuman" class="nav-link">
                                 <i class="fas fa-bullhorn"></i>
                                 <p>Pengumuman</p>
                             </a>
@@ -203,70 +311,13 @@
             </div>
         </aside>
 
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0">Detail Pendaftaran</h1>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </div><!-- /.content-header -->
+        <!-- Konten Start -->
 
-            <!-- Main content -->
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="paper">
-                        <div class="section">
-                            <span class="label">Nama Calon Peserta Didik:</span> Novyta Maharani
-                        </div>
-                        <div class="section">
-                            <span class="label">Tempat Lahir:</span> Tanah Laut
-                        </div>
-                        <div class="section">
-                            <span class="label">Tanggal Lahir:</span> 22-11-2003
-                        </div>
-                        <div class="section">
-                            <span class="label">Jenis Kelamin:</span> Perempuan
-                        </div>
-                        <div class="section">
-                            <span class="label">Alamat Calon Peserta Didik:</span> [Alamat sesuai domisili tempat tinggal]
-                        </div>
-                        <div class="section">
-                            <span class="label">Nama Ayah:</span> [Nama Ayah]
-                        </div>
-                        <div class="section">
-                            <span class="label">Nama Ibu:</span> [Nama Ibu]
-                        </div>
-                        <div class="section">
-                            <span class="label">Pekerjaan Ayah:</span> [Pekerjaan Ayah]
-                        </div>
-                        <div class="section">
-                            <span class="label">Pekerjaan Ibu:</span> [Pekerjaan Ibu]
-                        </div>
-                        <div class="section">
-                            <span class="label">No Telepon Ayah:</span> [Nomor Telepon Ayah]
-                        </div>
-                        <div class="section">
-                            <span class="label">No Telepon Ibu:</span> [Nomor Telepon Ibu]
-                        </div>
-                        <div class="section">
-                            <span class="label">Data Sesuai Akta Lahir:</span> [Data sesuai akta lahir]
-                        </div>
-                    </div>
-                </div><!-- /.container-fluid -->
-            </div><!-- /.content -->
-        </div><!-- /.content-wrapper -->
+              <?= $this->renderSection('konten')  ?>
 
-        <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.2.0
-            </div>
-            <strong>Contact</strong> 0822-5004-4551 | tk.kompi623@gmail.com
-        </footer>
+        <!-- Konten End -->
+
+        
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -283,4 +334,3 @@
 </body>
 
 </html>
-

@@ -7,11 +7,11 @@
     <title>AdminLTE 3 | dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="<?= base_url()?>/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?= base_url()?>/template/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/template/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?= base_url()?>/template/AdminLTE-3.2.0/docs/assets/css/adminlte.min.css">
+    <link rel="stylesheet" href="/template/AdminLTE-3.2.0/dist/css/adminlte.min.css">
     <style>
         .paper {
             background-color: white;
@@ -195,10 +195,10 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0">Detail Pendaftaran</h1>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </div><!-- /.content-header -->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Main content -->
             <div class="content">
@@ -240,30 +240,12 @@
                         <div class="section">
                             <span class="label">Data Sesuai Akta Lahir:</span> [Data sesuai akta lahir]
                         </div>
+                        <div class="btn-container">
+                            <button class="btn btn-blue">Kembali</button>
+                        </div>
                     </div>
-                </div><!-- /.container-fluid -->
-            </div><!-- /.content -->
-        </div><!-- /.content-wrapper -->
-
-        <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.2.0
+                </div>
             </div>
-            <strong>Contact</strong> 0822-5004-4551 | tk.kompi623@gmail.com
-        </footer>
+        </div>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-    </div><!-- ./wrapper -->
-
-    <!-- jQuery -->
-    <script src="/template/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="/template/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="/template/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
-</body>
-
-</html>
+        <?= $this->endSection(); ?> 
