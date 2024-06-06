@@ -6,8 +6,11 @@ class Pendaftaran extends BaseController
 {
     public function index()
     {
+        $data = [
+            'sidebar' => 'Pendaftaran',
+        ];
         
-        return view('admin/pendaftaran/pendaftaran.php');
+        return view('admin/pendaftaran/pendaftaran.php',$data);
 
     }
 
@@ -23,37 +26,49 @@ class Pendaftaran extends BaseController
 
     public function simpan()
     {
+        $data = [
+            'sidebar' => 'Pendaftaran',
+        ];
 
-
-        return view('admin/pendaftaran/pendaftaran.php');
+        return view('admin/pendaftaran/pendaftaran.php',$data);
 
     }
 
     public function edit()
     {
-
-        return view('admin/pendaftaran/form_edit_pendaftaran.php');
+        $data = [
+            'sidebar' => 'Pendaftaran',
+        ];
+        return view('admin/pendaftaran/form_edit_pendaftaran.php',$data);
 
     }
 
     public function update()
     {
-
+        $data = [
+            'sidebar' => 'Pendaftaran',
+        ];
         
-        return view('admin/pendaftaran/pendaftaran.php');
+        return view('admin/pendaftaran/pendaftaran.php',$data);
 
     }
 
     public function detail()
     {
-        return view('admin/pendaftaran/detail_pendaftaran.php');
+        $data = [
+            'sidebar' => 'Pendaftaran',
+        ];
+        return view('admin/pendaftaran/detail_pendaftaran.php',$data);
 
     }
 
     public function hapus()
     {
+        $data = [
+            'sidebar' => 'Pendaftaran',
+        ];
 
-        return view('admin/pendaftaran/pendaftaran.php');
+        return view('admin/pendaftaran/pendaftaran.php',$data);
 
     }
     
