@@ -9,9 +9,8 @@ class Pendaftaran extends BaseController
         $data = [
             'sidebar' => 'Pendaftaran',
         ];
-        
-        return view('admin/pendaftaran/pendaftaran.php',$data);
 
+        return view('admin/pendaftaran/pendaftaran.php', $data);
     }
 
     public function tambah()
@@ -20,8 +19,7 @@ class Pendaftaran extends BaseController
             'sidebar' => 'Pendaftaran',
         ];
 
-        return view('admin/pendaftaran/form_pendaftaran.php',$data);
-
+        return view('admin/pendaftaran/form_pendaftaran.php', $data);
     }
 
     public function simpan()
@@ -30,8 +28,7 @@ class Pendaftaran extends BaseController
             'sidebar' => 'Pendaftaran',
         ];
 
-        return view('admin/pendaftaran/pendaftaran.php',$data);
-
+        return view('admin/pendaftaran/pendaftaran.php', $data);
     }
 
     public function edit()
@@ -39,8 +36,7 @@ class Pendaftaran extends BaseController
         $data = [
             'sidebar' => 'Pendaftaran',
         ];
-        return view('admin/pendaftaran/form_edit_pendaftaran.php',$data);
-
+        return view('admin/pendaftaran/form_edit_pendaftaran.php', $data);
     }
 
     public function update()
@@ -48,9 +44,8 @@ class Pendaftaran extends BaseController
         $data = [
             'sidebar' => 'Pendaftaran',
         ];
-        
-        return view('admin/pendaftaran/pendaftaran.php',$data);
 
+        return view('admin/pendaftaran/pendaftaran.php', $data);
     }
 
     public function detail()
@@ -58,8 +53,7 @@ class Pendaftaran extends BaseController
         $data = [
             'sidebar' => 'Pendaftaran',
         ];
-        return view('admin/pendaftaran/detail_pendaftaran.php',$data);
-
+        return view('admin/pendaftaran/detail_pendaftaran.php', $data);
     }
 
     public function hapus()
@@ -68,9 +62,6 @@ class Pendaftaran extends BaseController
             'sidebar' => 'Pendaftaran',
         ];
 
-        return view('admin/pendaftaran/pendaftaran.php',$data);
-
+        return view('admin/pendaftaran/pendaftaran.php', $data);
     }
-    
-  
 }
