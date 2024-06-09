@@ -80,17 +80,6 @@
             text-align: center;
         }
 
-        /* CSS untuk mengatur ulang margin pada menu dan ikon login */
-        .menu_nav .nav-item {
-            margin-right: 15px;
-            /* Menambahkan jarak antar item menu */
-        }
-
-        .login {
-            margin-left: auto;
-            /* Mengatur margin kiri untuk ikon login */
-            margin-right: -20px;
-        }
 
         /* Custom CSS untuk memisahkan TK Kartika V-38 dan Info */
         .separator {

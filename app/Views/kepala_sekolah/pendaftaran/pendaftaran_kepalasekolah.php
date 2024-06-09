@@ -153,7 +153,7 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a class="nav-link" href="/sejarah">Sejarah Sekolah</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/visi_misi">Visi Misi & Tujuan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/visimisi">Visi Misi & Tujuan</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/struktur">Struktur Organisasi</a></li>
                                 </ul>
                             </li>
@@ -163,7 +163,20 @@
                             <li class="nav-item"><a class="nav-link" href="/kegiatan">Kegiatan</a></li>
                             <li class="nav-item submenu dropdown ml-auto login">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class></i> Login
+                                <i class="fa fa-info-circle"></i> Info
+                                </a>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <table class="table info-table">
+                                            <tr>
+                                                <td>Info Pengguna:</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-key"></i> Level: Kepala Sekolah</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+
                                 </a>
                             </li>
                         </ul>
@@ -235,31 +248,27 @@
             text-align: center;
         }
         body {
-    font-family: Arial, sans-serif;
-}
+            font-family: Arial, sans-serif;
+        }
 
-.table-header {
-    display: flex;
-    justify-content: flex-end; /* Align the search box to the right */
-    margin-bottom: 10px; /* Space between search box and table */
-}
+        .table-header {
+            display: flex;
+            justify-content: flex-end; /* Align the search box to the right */
+            margin-bottom: 10px; /* Space between search box and table */
+        }
 
-.search-box {
-    display: flex;
-    align-items: center;
-}
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
 
-label {
-    margin-right: 10px;
-}
+        label {
+            margin-right: 10px;
+        }
 
-input[type="text"] {
-    padding: 5px;
-}
-
-        
-
-
+        input[type="text"] {
+            padding: 5px;
+        }
     </style>
 </head>
 <!-- Banner -->
@@ -307,10 +316,6 @@ input[type="text"] {
             </div>
         </div>
     </div>
-
-
-
-
 
   
 <!-- DEBUG-VIEW ENDED 3 APPPATH\Views\pages\User\pengantar.php -->

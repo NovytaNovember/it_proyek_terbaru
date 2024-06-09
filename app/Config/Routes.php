@@ -40,7 +40,7 @@ $routes->get('hasil_pengumuman', 'Pengumuman_freeuser::hasil');
 //Bagian Novyta Kepala Sekolah
 
 $routes->get('pendafataran_kepalasekolah', 'Pendaftaran_kepalasekolah::index');
-$routes->get('detail_pendafataran_kepalasekolah', 'Pendaftaran_kepalasekolah::detail');
+$routes->get('detail_pendaftaran_kepalasekolah', 'Pendaftaran_kepalasekolah::detail');
 $routes->get('pengumuman_kepalasekolah', 'Pengumuman_kepalasekolah::index');
 $routes->get('detail_pengumuman_kepalasekolah', 'Pengumuman_kepalasekolah::hasil');
 

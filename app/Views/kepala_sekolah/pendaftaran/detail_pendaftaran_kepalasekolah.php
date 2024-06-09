@@ -143,7 +143,7 @@
                 /* Menambahkan jarak antara teks dan tombol */
             }
 
-
+            body{}
             font-family: Arial,
             sans-serif;
             background-color: #f5f5f5;
@@ -253,48 +253,73 @@
 
     <body>
 
-        <header class="header_area">
-            <div class="main_menu">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container">
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav menu_nav">
-                                <li class="nav-item tk-kartika"><a class="nav-link" href="portfolio.html">TK Kartika V-38</a></li>
-                                <li class="separator"></li> <!-- Separator to create space -->
-                                <li class="nav-item active"><a class="nav-link" href="/beranda">Beranda</a></li>
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="/sejarah">Sejarah Sekolah</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/visi_misi">Visi Misi & Tujuan</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/struktur">Struktur Organisasi</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="/tendik">Tenaga Pendidik</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/pendaftaran">Pendaftaran</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/pengumuman">Pengumuman</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/kegiatan">Kegiatan</a></li>
-                                <li class="nav-item submenu dropdown ml-auto login">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class></i> Login
-                                    </a>
-                                </li>
+<!--================ Start Header Area =================-->
+<header class="header_area">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav">
+                        <li class="nav-item tk-kartika"><a class="nav-link" href="portfolio.html">TK Kartika V-38</a></li>
+                        <li class="separator"></li> <!-- Separator to create space -->
+                        <li class="nav-item active"><a class="nav-link" href="/beranda">Beranda</a></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="/sejarah">Sejarah Sekolah</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/visimisi">Visi Misi & Tujuan</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/struktur">Struktur Organisasi</a></li>
                             </ul>
-                        </div>
-                    </div>
-                </nav>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/tendik">Tenaga Pendidik</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pendaftaran">Pendaftaran</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pengumuman">Pengumuman</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/kegiatan">Kegiatan</a></li>
+                        <li class="nav-item submenu dropdown ml-auto login">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-info-circle"></i> Info
+                            </a>
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <table class="table info-table">
+                                        <tr>
+                                            <td>Info Pengguna:</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-key"></i> Level: Kepala Sekolah</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> Daftar Akun</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header>
-        <div style="width: 300px; height:100px"></div>
-        <div class="container">
-            <div class="card text-center ">
+        </nav>
+    </div>
+</header>
+<div style="width: 300px; height:100px"></div>
+<div class="container">
+
+
+    </tbody>
+</table>
+</div>
+
+</body>
+        <div class="card text-center ">
                 <div class="card-body">
                     <div class="content">
                         <div class="col">
                             <img src="<?= base_url() ?>/img/logo TK.png" alt="logo TK.png" class="img-fluid">
                         </div>
                     </div>
+        <div style="width: 300px; height:100px"></div>
+        <div class="container">
+            
                     <div class="paper">
                         <table>
                             <tr>

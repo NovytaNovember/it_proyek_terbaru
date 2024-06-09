@@ -4,8 +4,11 @@ namespace App\Controllers;
 
 class Kegiatan extends BaseController
 {
+    
     public function index()
     {
+        
+
         return view('admin/kegiatan/kegiatan');
     }
     

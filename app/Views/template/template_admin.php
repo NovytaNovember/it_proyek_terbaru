@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | dashboard</title>
+    <title>TK Kartika V-38</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/template/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="/template/AdminLTE-3.2.0/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/template/AdminLTE-3.2.0/docs/assets/css/adminlte.min.css">
     <style>
         .paper {
             background-color: white;
@@ -241,7 +241,8 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="index3.html" class="nav-link">
                         <i class="fas fa-list"></i>
-                        <span class="font-weight-bold" style="font-size: 1.2em;">Data Pendaftaran</span>
+                        <span class="font-weight-bold" style="font-size: 1.2em;"><?= $judul; ?></span>
+                        
                     </a>
                 </li>
             </ul>
@@ -308,29 +309,28 @@
                                     Profil
                                 </p>
                             </a>
-
                         </li>
                         <li class="nav-item">
-                            <a href="tenaga_pendidik" class="nav-link <?php echo ($sidebar == 'Tenaga Pendidik') ? 'active' : '' ?>">
+                            <a href="tenaga_pendidik" class="nav-link">
                                 <i class="fas fa-chalkboard-teacher"></i>
                                 <p>Tenaga Pendidik</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link <?php echo ($sidebar == 'Kegiatan') ? 'active' : '' ?>">
+                            <a href="pages/widgets.html" class="nav-link">
                                 <i class="fas fa-calendar"></i>
                                 <p>Kegiatan</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pendaftaran" class="nav-link <?php echo ($sidebar == 'Pendaftaran') ? 'active' : '' ?>">
+                            <a href="pendaftaran" class="nav-link">
                                 <i class="fas fa-clipboard-list"></i>
                                 <p>Pendaftaran</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pengumuman" class="nav-link <?php echo ($sidebar == 'Pengumuman') ? 'active' : '' ?>">
+                            <a href="pengumuman" class="nav-link">
                                 <i class="fas fa-bullhorn"></i>
                                 <p>Pengumuman</p>
                             </a>
@@ -345,8 +345,6 @@
         <?= $this->renderSection('konten')  ?>
 
         <!-- Konten End -->
-
-
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
